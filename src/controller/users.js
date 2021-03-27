@@ -16,6 +16,7 @@ const getAllUsers = (req, res) => {
             name: 'Desi'
         }
     ]
+    throw new Error('Ocurrio un error al obtener los usuarios de la base de datos')
 
   res.json(users)//aqui se puede colocar el status de la peticion a usar
 }
